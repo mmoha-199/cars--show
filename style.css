@@ -5,11 +5,7 @@
     margin: 0;
    
 }
-
 /* mobile first */
-
-
-
 /*.clearfix::after {
     content: "";
     clear: both;
@@ -89,7 +85,6 @@
 .nav-list.visible{
     display: flex;
 }
-
 .nav-list a {
     font-size: 1em;
     text-decoration: none;
@@ -105,8 +100,7 @@
 }
 /*dropdown--cars---list*/
 .car-btn {
-    color: inherit;
-    
+    color: inherit;  
 }
 .car-drop {
     position: relative;
@@ -121,7 +115,6 @@
     min-width: 160px;
     height: 190px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    
     overflow: scroll;
 }  
 .carlist a {
@@ -174,10 +167,7 @@
     text-align: center;
     margin: 10px;
     padding: 5px;
-    position: relative;
-    
-
-    
+    position: relative;   
 }
 .linear{
     display: none;
@@ -189,7 +179,6 @@
     align-self: center;
     border: 1px solid rgba(0, 0, 0, 0.068);
 }
-
 .mmain-top h1{
     text-align: center;
     font-size: 1.2em;
@@ -210,7 +199,6 @@
     line-height: 25px;
     color:black;
 }
-
 .mmain-top button{
     width: 40vw;
     height: 40px;
@@ -587,15 +575,13 @@
     .nav-top i{
         display: none;
     }
-
     .nav-list{
         flex-direction: row;
         flex-wrap: nowrap;
         display: flex;
         justify-content: center;
         padding-bottom: 0px;
-        margin-bottom: 0px;
-        
+        margin-bottom: 0px;    
     }
     .nav-list li{
         padding: 5px;
@@ -607,7 +593,6 @@
     .nav-list li a:hover{
         color: rgb(238, 119, 76);
     }
-
     .nav-list li:last-of-type{
         display: none;
     }
@@ -634,7 +619,6 @@
     }
     .linear{
         display: block;
-    
     }
     .mmain-top h1{
         font-size: 2em;
@@ -645,7 +629,6 @@
         font-size: 1.2em;
         color: antiquewhite;
     }
-
     .mmain-top button{
         width: 15vw;
         cursor: pointer;
@@ -716,9 +699,7 @@
      padding-left: 350px;
      padding-top: 10px;
     
-    }
-
-    
+    }   
 }
 
 /*320px — 480px: Mobile devices
