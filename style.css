@@ -1,0 +1,728 @@
+*{
+     
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0;
+   
+}
+
+/* mobile first */
+
+
+
+/*.clearfix::after {
+    content: "";
+    clear: both;
+    display: flex;
+  }*/
+
+.container{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 100vw;
+    grid-template-rows: 120px 2400px 170px;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 0;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+}
+.header{
+    grid-area: hd;
+    z-index: 10;
+}
+.container.shrink{
+    grid-template-rows: 350px 2400px 170px;
+}
+.content{
+    grid-area: main;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 1;
+}
+.Fo-otr{
+    grid-area: ft;
+    align-self: end;
+    bottom: 0;
+}
+/*NAV*/
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3333;
+    color: white;
+    margin-bottom: 20px;
+}
+.nav-top{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: white;  
+}
+.fa-bars{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.nav-top img{
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.nav-list{
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 5px;
+    margin: 0px;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;   
+}
+.nav-list.visible{
+    display: flex;
+}
+
+.nav-list a {
+    font-size: 1em;
+    text-decoration: none;
+    font-family: inherit;
+    text-transform: inherit;
+    justify-content: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 5px;
+}
+.nav-list a:hover{
+    cursor: pointer;
+}
+/*dropdown--cars---list*/
+.car-btn {
+    color: inherit;
+    
+}
+.car-drop {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}  
+.carlist {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    height: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+    overflow: scroll;
+}  
+.carlist a {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}  
+.carlist a:hover {
+    background-color: #e4e1e1;
+}  
+.carlist.visible {
+    display: block;
+  }
+.fa-angle-down{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.top-conta{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 20px;
+    position: inherit;
+}
+.top-conta a{
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    text-decoration: none;
+}
+.top-icon i{
+    padding: 5px;
+    padding-right: 10px;
+    margin: 5px;
+    color: rgba(231, 137, 50, 0.952);
+}
+.mmain-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    
+
+    
+}
+.linear{
+    display: none;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.377);
+    z-index: -1;
+    align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+.mmain-top h1{
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: 'new', sans-serif;
+    margin-bottom: 10px;
+    color: black;
+    
+}
+.mmain-top h2{
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 300;
+    font-family: 'new', sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    line-height: 25px;
+    color:black;
+}
+
+.mmain-top button{
+    width: 40vw;
+    height: 40px;
+    outline: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    outline: none;
+    align-self: center;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow:   0px 5px 10px 0px rgba(0,0,0,0.2);
+    transition: color 0.2s;
+    transition: box-shadow 0.2s;
+    
+}
+.mmain-top button a{
+    cursor: pointer;
+}
+.mmain-top button:hover{
+    box-shadow:   0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: rgba(231, 137, 50, 0.952);
+}
+.big-icons{
+    display: grid;
+    width: 100vw;
+    height: 418px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "clk"
+    "resv"
+    "sign"
+    "delv";
+}
+.click, .reserve, .sign, .deliver, #clik, #resv, #docs, #delv,.circle{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.circle{
+    width: 105px;
+    height: 105px;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border: 3px solid rgba(231, 137, 50, 0.952);
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.068);;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
+    transition: box-shadow 0.2s;
+}
+.circle:hover{
+    background-color: rgba(177, 174, 174, 0.678);
+    color: rgba(231, 137, 50, 0.952);
+    border: 3px solid rgba(233, 122, 19, 0.952);
+    border-radius: 50%;
+}
+.big-icons i{
+    font-size: 45px;
+    text-align: center;
+    transition: font-size 0.1s;
+    cursor: pointer;
+}
+.big-icons i:hover{
+    font-size: 50px;
+}
+.big-icons h2{
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.oranged{
+    color: rgb(255, 124, 1); 
+}
+.cards-box{
+    display: grid;
+    width: 100vw;
+    height: 640px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-rows: 33.33%;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    "used-v"
+    "used-c"
+    "find";
+}
+.bbackgg{
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgb(209, 209, 209);
+    image-resolution: rgb(65, 60, 60);
+    width: 96%;
+    margin-bottom: 10px;
+    outline: none;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.bbackgg h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bbackgg p{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    margin: 10px;
+}
+.moreInfo{
+    height: auto; 
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;   
+}
+.moreInfo a{
+    width: 35%;
+    height: 35px;
+    padding: 5px;
+    padding-top: 9px;
+    margin: 10px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(255, 145, 0);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: white;
+}
+.moreInfo a:hover{
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
+.used-c{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(./img/car2.jpg);
+}
+.used-v{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(./img/car1.jpg);
+}
+.find{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(./img/googlemap.png5.png);
+}
+.aboutUs{
+    background-color: black;
+    width: 98vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-between;
+    padding: 10px;
+    margin: 5px;
+}
+.topAb{
+    padding: 20px;
+    margin-bottom: 30px;  
+}
+.topAb h1{
+    font-size: 24px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    color: rgb(197, 99, 6);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    line-height: 35px;
+}
+.buttAb p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logSign{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-between;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+.logSign a{
+    text-decoration: none;
+    color: inherit;
+}
+.LOg-in, .SGn-up{
+    padding: 10px;
+}
+.logSign p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+.logSign button{
+    width: 75%;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(231, 125, 26);
+    border-radius: 5px;
+    outline: none;
+    transition: color 0.2s;
+    transition: box-shadow 0.2s;
+    transition: background-color 0.2s;
+}
+.logSign button:hover{
+    color: white;
+    background-color: rgba(231, 143, 10, 0.418);
+    box-shadow: 0.5px 0.5px  rgb(177, 176, 176);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    justify-items: left;
+    align-content: space-between;
+    padding: 20px;
+    padding-left: 30px;
+    margin: 5px;
+    background-color: rgb(82, 83, 80);
+    color: white;
+}
+.contact h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Roboto' ,sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    word-spacing: 10px;
+    margin-bottom: 15px;
+}
+.contact p{
+    text-transform: capitalize;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.contact p:last-of-type{
+    text-transform: uppercase;
+}
+#tel-pre, #eemail{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.contact i{
+    padding-right: 10px;
+    color: rgb(196, 131, 10);
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+.Fo-otr{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+.Fo-otr a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+.Fo-otr a:hover{
+    color: rgb(255, 145, 0);
+}
+.refer-link{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+.refer-link ul{
+    list-style: none;
+    width: 50%;
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.med-link{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.med-link i{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.med-link i:hover{
+    background-color: white;
+}
+.fa-facebook:hover{
+    color: rgb(63, 63, 190);
+}
+.fa-instagram:hover{ 
+    color: #bc1888;   
+}
+.fa-twitter:hover{
+    color: rgb(104, 104, 230);
+}
+.fa-youtube:hover{
+    color: rgb(223, 18, 46);
+}
+.fa-google-plus-g:hover{
+    color: rgb(190, 72, 63);
+}
+.fa-snapchat-ghost:hover{
+    color: rgb(190, 188, 63);
+}
+.rights{
+    text-align: center;
+}
+.rights p{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.rights p::first-letter, .rights p a{
+    text-transform: capitalize;
+}
+/*wider screen****************************************/
+@media screen and (min-width:796px){
+    .container{
+        grid-template-rows: 120px 2190px 170px;
+    }
+    .navbar{
+        width: 100vw;
+        position: fixed;
+    }
+    .nav-top i{
+        display: none;
+    }
+
+    .nav-list{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        
+    }
+    .nav-list li{
+        padding: 5px;
+        margin: 15px;
+        float: left;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+    }
+    .nav-list li a:hover{
+        color: rgb(238, 119, 76);
+    }
+
+    .nav-list li:last-of-type{
+        display: none;
+    }
+    .car-drop{
+        padding: 10px;
+    }
+    .carlist.visible{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 500px;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+    }
+    .mmain-top{
+        height: 400px;
+        margin: 0;
+        background-image: url("./img/car-cover.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 50px;
+        z-index: -1;
+    }
+    .linear{
+        display: block;
+    
+    }
+    .mmain-top h1{
+        font-size: 2em;
+        color: aliceblue;
+
+    }
+    .mmain-top h2{
+        font-size: 1.2em;
+        color: antiquewhite;
+    }
+
+    .mmain-top button{
+        width: 15vw;
+        cursor: pointer;
+    }
+    
+    .big-icons{
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: 100%;
+        height: 250px;
+    }
+    .cards-box{
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: 100%;
+        height: 300px;
+    }
+    .aboutUs{
+        height: 600px;
+        background-color: #e4e1e1;
+        margin-right: 0;
+    }
+    .topAb{
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .aboutUs p{
+        color: black;
+        padding: 10px;
+        line-height: 50px;
+        font-size: 1.5em;
+    }
+    .logSign{
+        padding: 25px;
+        flex-direction: row;
+    }
+    .logSign p{
+        padding-top: 28px;
+    }
+    .logSign button{
+        width: 20vh;
+        margin: 20px;
+    }
+    .contact{
+        padding-left: 50px;
+        line-height: 60px;
+        padding-bottom: 60px;
+    }
+    .contact h1{
+        font-size: 1.5em;
+    }
+    .contact p{
+        font-size: 1.1em;
+        letter-spacing: 2px;
+    }
+    .Fo-otr{
+        z-index: 3;
+    }
+    #tel-pre, #eemail{
+        height: 18px;
+    }
+    .contact i{
+        margin-top: 20px;
+    }
+    .refer-link ul{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     justify-items: center;
+     padding-left: 350px;
+     padding-top: 10px;
+    
+    }
+
+    
+}
+
+/*320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV*/

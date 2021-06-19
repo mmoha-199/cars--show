@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    z-index: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.inner{
+    display: grid;
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+    grid-template-columns: 100vw;
+    grid-template-rows: 80px 1000px ;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: 
+    "hed"
+    "tab";
+}
+.heead{
+    grid-area: hed;
+    display: block;
+}
+.tablInr{
+    grid-area: tab;
+    display: block;
+    background-color: rgba(199, 196, 196, 0.055);
+    padding: 25px;
+    border-top: 1px solid rgba(199, 196, 196, 0.295);
+    
+}
+.tabl{
+    display: grid;
+    width: 90vw;
+    height: 98%;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1fr ;
+    grid-template-areas: 
+    "sgn"
+    "tab";
+    border: 1px solid rgba(82, 81, 81, 0.178);
+    padding: 20px;
+    font-size: 20px;
+    z-index: 2;
+}
+.sign{
+    grid-area: sgn;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 0px;
+    padding: 5px;
+    justify-content: space-between;
+   
+}
+.sign div{
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    padding-top: 5px;
+    display: block;
+}
+
+.sign div button{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(59, 59, 59);
+    border: none;
+    text-transform: uppercase;
+}
+.tabMain h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+.tabMain{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+}
+.withGF{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.withGF i{
+    font-size: 1.6em;
+    margin-top: 10px;
+    padding: 5px;
+}
+.withGog ,.withFc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 5px;
+    margin: 3px;
+    outline: none;
+}
+.withGog i{
+    color: brown;
+}
+.withFc i{
+    color: rgb(66, 66, 206);
+}
+.devided{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.firstDv, .secondDv{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    width: 46.5%;
+}
+.middleDv{
+    display: inline-flex;
+    margin-bottom: -5px;
+    padding-left: 2px;
+    text-align: center;
+    width: 6%;
+}
+.foorm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.foorm input{
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    outline: none;
+}
+.privacy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.privacy input{
+    font-size: 50px;
+}
+.privacy p::first-letter{
+
+    text-transform: capitalize;
+}
+.privacy p{
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.privacy a{
+    text-decoration: none;
+    color: rgb(11, 116, 177);
+}
+.buttomDv{
+    display: flex;
+    flex-direction: column;
+}
+.buttomDv button{
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.048);
+    outline: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+
+}
+.buttomDv button:hover{
+    background-color: orange;
+    color: white;
+}
+.buttomDv a{
+    text-decoration: none;
+    cursor: pointer;
+}

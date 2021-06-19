@@ -1,0 +1,36 @@
+body{
+    background-color: aquamarine;
+    font-size: 18px;
+    color: rgb(41, 38, 38);
+}
+.container{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    grid-template-columns: 30px repeat(7,1fr);
+    grid-template-rows: 100px 350px 600px 100px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "feat feat feat feat feat feat feat feat"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+}
+
+.box{
+    border:  1px solid red;
+    background-color: yellow;
+}
+
+.header{
+    grid-area: hd;
+}
+.feature{
+    grid-area: feat;
+}
+.content{
+    grid-area: main;
+}
+.footer{
+    grid-area: ft;
+}
