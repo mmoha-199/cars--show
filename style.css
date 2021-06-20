@@ -704,7 +704,12 @@
 
 /*481px — 768px: iPads, Tablets*/
 @media screen and (min-width:481px){
-       
+    .container{
+        grid-template-rows: 120px 2000px 170px;
+    }
+    .nav-top img{
+        margin-left: 30%;
+    }
 }
 
 /*769px — 1024px: Small screens, laptops
