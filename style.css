@@ -563,7 +563,7 @@
     text-transform: capitalize;
 }
 /*wider screen****************************************/
-@media screen and (min-width:796px){
+@media screen and (min-width:786px){
     .container{
         grid-template-rows: 120px 2190px 170px;
     }
