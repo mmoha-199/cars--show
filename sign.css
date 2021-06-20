@@ -208,3 +208,8 @@
         width: 35vw;
     }
 }
+@media screen and (min-width: 1200px{
+    .tabl-b{
+        width: 25%;
+    }
+}
