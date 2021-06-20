@@ -84,7 +84,7 @@ body{
 }
 .avatar{
     display: block;
-    margin-left: 22%;
+    margin-left: 25%;
     width: 200px;
     height: 200px;
     border: 1px solid rgba(8, 8, 8, 0.096);
@@ -122,6 +122,9 @@ body{
     background-color: #d6d0d0;
     text-align: justify;
     padding: 20px;
+}
+.general h2::first-letter{
+    text-transform: capitalize;
 }
 .general a{
     text-decoration: none;
