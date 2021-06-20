@@ -5,12 +5,6 @@
     margin: 0;
 }
 /*320px — 480px: Mobile devices*/
-/*.clearfix::after {
-    content: "";
-    clear: both;
-    display: flex;
-  }*/
-
 .container{
     display: grid;
     width: 100vw;
@@ -562,10 +556,8 @@
 .rights p::first-letter, .rights p a{
     text-transform: capitalize;
 }
-
-
 /*481px — 768px: iPads, Tablets*/
-@media only screen and (max-width: 481px) and (min-width: 768px){
+@media  screen and (min-width: 481px) {
     .container{
         grid-template-rows: 120px 2310px 170px;
     }
@@ -574,7 +566,7 @@
     }
 }
 /*769px — 1024px: Small screens, laptops*/
-@media only screen and (max-width: 769px) and (min-width: 1024px){
+@media  screen and (min-width: 769px) {
     .container{
         grid-template-rows: 120px 2310px 170px;
     }
@@ -646,7 +638,6 @@
         width: 20vw;
         cursor: pointer;
     }
-    
     .big-icons{
         grid-template-columns: repeat(4,25%);
         grid-template-rows: 100%;
@@ -709,12 +700,21 @@
      flex-direction: column;
      justify-content: center;
      justify-items: center;
-     padding-left: 350px;
+     padding-left: 18%;
      padding-top: 10px;
-    
     }   
 }
 /*1025px — 1200px: Desktops, large screens*/
-@media only screen and (max-width: 1025px) and (min-width: 1200px)
+@media only screen and (min-width: 1025px){
+    .container{
+        grid-template-rows: 120px 2200px 170px;
+    }
+    .nav-list li a{
+        font-size: 1.5em;
+    }
+    .refer-link ul{
+        padding-left: 20%;
+    } 
+}
 
 
