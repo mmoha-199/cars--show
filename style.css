@@ -703,7 +703,9 @@
 
 
 /*481px — 768px: iPads, Tablets*/
-
+@media screen and (min-width:481px){
+       
+}
 
 /*769px — 1024px: Small screens, laptops
 1025px — 1200px: Desktops, large screens
