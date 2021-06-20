@@ -8,6 +8,8 @@
     display: grid;
     width: 100vw;
     height: auto;
+    margin: 0;
+    padding: 0;
     z-index: 1;
     grid-template-columns: 100vw;
     grid-template-rows: 80px 1000px ;
@@ -208,8 +210,10 @@
         width: 35vw;
     }
 }
-@media screen and (min-width: 1200px{
+@media screen and (min-width: 1200px){
     .tabl-b{
-        width: 25%;
+        width: 30vw;
+        margin: 0;
+        padding: 0;
     }
 }
