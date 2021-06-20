@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(223, 236, 232);
+    background-color: rgb(255, 255, 255);
     font-size: 18px;
     color: rgb(41, 38, 38);
     z-index: 0;
@@ -83,16 +83,16 @@ body{
 }
 .avatar{
     display: block;
+    
     margin-left: 22%;
-    width: 210px;
-    height: 210px;
+    width: 200px;
+    height: 200px;
     border: 1px solid rgba(8, 8, 8, 0.096);
     box-shadow: 0px 8px 16px 0px rgba(139, 141, 140, 0.39);
-    border-radius: 50%;
     background-image: url("./img/avatar.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: center;
+    background-position-y: 15%;
     
 }
 .sharing-s{
