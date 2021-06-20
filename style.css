@@ -590,13 +590,18 @@
         flex-wrap: nowrap;
         display: flex;
         justify-content: center;
-        padding-bottom: 0px;
-        margin-bottom: 0px;    
+        padding: 0px;
+        margin: 0px;    
     }
     .nav-list li{
         padding: 5px;
+       font-size: 14px;
         margin: 15px;
         float: left;
+        
+    }
+    .car-drop{
+        padding: 0px;
     }
     .nav-list li a:hover{
         color: rgb(238, 119, 76);
@@ -638,7 +643,7 @@
         color: antiquewhite;
     }
     .mmain-top button{
-        width: 15vw;
+        width: 20vw;
         cursor: pointer;
     }
     
