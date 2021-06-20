@@ -273,7 +273,7 @@
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
-.oranged{
+.pref-col{
     color: rgb(255, 124, 1); 
 }
 .cards-box{
@@ -317,7 +317,7 @@
     text-transform: capitalize;
     margin: 10px;
 }
-.moreInfo{
+.more-info{
     height: auto; 
     display: flex;
     flex-direction: row;
@@ -325,7 +325,7 @@
     justify-content: center;
     justify-items: center;   
 }
-.moreInfo a{
+.more-info a{
     width: 35%;
     height: 35px;
     padding: 5px;
@@ -344,7 +344,7 @@
     outline: none;
     box-shadow: white;
 }
-.moreInfo a:hover{
+.more-info a:hover{
     cursor: pointer;
     color: white;
     background-color: gray;
@@ -358,7 +358,7 @@
 .find{
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(./img/googlemap.png5.png);
 }
-.aboutUs{
+.about-us{
     background-color: black;
     width: 98vw;
     height: auto;
@@ -371,11 +371,11 @@
     padding: 10px;
     margin: 5px;
 }
-.topAb{
+.top-ab{
     padding: 20px;
     margin-bottom: 30px;  
 }
-.topAb h1{
+.top-ab h1{
     font-size: 24px;
     letter-spacing: 3px;
     word-spacing: 5px;
@@ -384,7 +384,7 @@
     font-family: 'Roboto', sans-serif;
     line-height: 35px;
 }
-.buttAb p{
+.butt-ab p{
     color: white;
     font-size: 20px;
     line-height: 30px;
@@ -715,6 +715,17 @@
     .refer-link ul{
         padding-left: 20%;
     } 
+}
+@media only screen and (min-width: 1200px){
+    .container{
+        grid-template-rows: 120px 1840px 170px;
+    }
+    .about-us{
+        width: 100vw;
+    }
+    .about-us p{
+        font-size: 20px;
+    }
 }
 
 
