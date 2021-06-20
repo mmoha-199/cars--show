@@ -1,36 +1,164 @@
 body{
-    background-color: aquamarine;
+    background-color: rgb(223, 236, 232);
     font-size: 18px;
     color: rgb(41, 38, 38);
 }
+
 .container{
     display: grid;
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-    grid-template-columns: 30px repeat(7,1fr);
-    grid-template-rows: 100px 350px 600px 100px;
+    width: 100vw;
+    grid-template-columns: 100vw;
+    grid-template-rows: 120px 900px 170px;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 0;
     grid-template-areas: 
-    "hd hd hd hd hd hd hd hd"
-    "feat feat feat feat feat feat feat feat"
-    "main main main main main main main main"
-    "ft ft ft ft ft ft ft ft";
+    "hd"
+    "main"
+    "ft";
 }
-
-.box{
-    border:  1px solid red;
-    background-color: yellow;
-}
-
 .header{
     grid-area: hd;
+    z-index: 10;
 }
-.feature{
-    grid-area: feat;
-}
-.content{
+
+.author{
     grid-area: main;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 1;
 }
-.footer{
+.sharing-s{
     grid-area: ft;
+    align-self: end;
+    bottom: 0;
+}
+/*NAV*/
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3333;
+    color: white;
+    margin-bottom: 20px;
+}
+.nav-top{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: white;  
+}
+.fa-bars{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.nav-top img{
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 15px;
+    margin: 0px;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;   
+}
+.nav-list.visible{
+    display: flex;
+}
+.nav-list a {
+    font-size: 1em;
+    text-decoration: none;
+    font-family: inherit;
+    text-transform: inherit;
+    justify-content: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 5px;
+}
+.nav-list a:hover{
+    cursor: pointer;
+}
+.sharing-s{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+.sharing-s a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+.sharing-s a:hover{
+    color: rgb(255, 145, 0);
+}
+.refer-link{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+.refer-link ul{
+    list-style: none;
+    width: 50%;
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.med-link{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.med-link i{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.med-link i:hover{
+    background-color: white;
+}
+.fa-facebook:hover{
+    color: rgb(63, 63, 190);
+}
+.fa-instagram:hover{ 
+    color: #bc1888;   
+}
+.fa-twitter:hover{
+    color: rgb(104, 104, 230);
+}
+.fa-youtube:hover{
+    color: rgb(223, 18, 46);
+}
+.fa-google-plus-g:hover{
+    color: rgb(190, 72, 63);
+}
+.fa-snapchat-ghost:hover{
+    color: rgb(190, 188, 63);
+}
+.rights{
+    text-align: center;
+}
+.rights p{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.rights p::first-letter, .rights p a{
+    text-transform: capitalize;
 }
