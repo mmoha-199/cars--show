@@ -1,6 +1,7 @@
 body{
     background-color: rgb(255, 255, 255);
     font-size: 18px;
+    font-family: 'Roboto',sans-serif;
     color: rgb(41, 38, 38);
     z-index: 0;
 }
@@ -83,7 +84,6 @@ body{
 }
 .avatar{
     display: block;
-    
     margin-left: 22%;
     width: 200px;
     height: 200px;
@@ -94,6 +94,37 @@ body{
     background-repeat: no-repeat;
     background-position-y: 15%;
     
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+.card h1{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.card span{
+    text-transform: capitalize;
+    color: rgba(94, 91, 91, 0.801);
+}
+.card p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.general{
+    display: block;
+    width: 90%;
+    
+    background-color: #d6d0d0;
+    text-align: justify;
+    padding: 20px;
+}
+.general a{
+    text-decoration: none;
 }
 .sharing-s{
     display: flex;
