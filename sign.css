@@ -54,7 +54,7 @@
     justify-content: space-between;
    
 }
-#sign-up, #sign-in{
+#sin-up, #sin-in{
     width: 45%;
     border: 1px solid rgba(0, 0, 0, 0.219);
     box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.048);
@@ -64,7 +64,7 @@
     display: block;
 }
 
-#sign-up button, #sign-in button{
+#sin-up button, #sin-in button{
     width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
@@ -73,11 +73,11 @@
     border: none;
     text-transform: uppercase;
 }
-.tabMain h1{
+.tab-main h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 200;
 }
-.tabMain{
+.tab-main{
     display: flex;
     flex-direction: column;
     padding: 5px;
