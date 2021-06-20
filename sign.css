@@ -193,3 +193,13 @@
     text-decoration: none;
     cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+    .tabl{
+        width: 50vw;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .tabl{
+        width: 35vw;
+    }
+}
