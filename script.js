@@ -1,14 +1,14 @@
-const carBtn = document.getElementById('show-cr');
-const carList = document.getElementById('list-cr');
-const navBtn = document.getElementById('menu-btn');
-const navList = document.getElementById('top-list');
-const CONTA = document.getElementById('main-dv');
+const carbtn = document.getElementById('show-cr');
+const carlist = document.getElementById('list-cr');
+const navbtn = document.getElementById('menu-btn');
+const navlist = document.getElementById('top-list');
+const conta = document.getElementById('main-dv');
 
 
-function toogleCarL(){ carList.classList.toggle('visible')};
-function toogleNav(){ navList.classList.toggle('visible');
-CONTA.classList.toggle('shrink')};
+function tooglecarl(){ carlist.classList.toggle('visible')};
+function tooglenav(){ navlist.classList.toggle('visible');
+conta.classlist.toggle('shrink')};
 
-carBtn.addEventListener('click',toogleCarL);
-navBtn.addEventListener('click',toogleNav);
+carbtn.addEventListener('click',tooglecarl);
+navbtn.addEventListener('click',tooglenav);
 
