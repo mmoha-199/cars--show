@@ -21,7 +21,7 @@
     grid-area: hed;
     display: block;
 }
-.tablInr{
+.tabl-inr{
     grid-area: tab;
     display: block;
     background-color: rgba(199, 196, 196, 0.055);
@@ -29,7 +29,7 @@
     border-top: 1px solid rgba(199, 196, 196, 0.295);
     
 }
-.tabl{
+.tabl-b{
     display: grid;
     width: 90vw;
     height: 98%;
@@ -82,17 +82,17 @@
     padding: 5px;
     text-align: center;
 }
-.withGF{
+.sign-with{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.withGF i{
+.sign-with i{
     font-size: 1.6em;
     margin-top: 10px;
     padding: 5px;
 }
-.withGog ,.withFc{
+.with-gog ,.with-fc{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -101,10 +101,10 @@
     margin: 3px;
     outline: none;
 }
-.withGog i{
+.with-gog i{
     color: brown;
 }
-.withFc i{
+.with-fc i{
     color: rgb(66, 66, 206);
 }
 .devided{
@@ -116,23 +116,23 @@
     margin-top: 15px;
     margin-bottom: 40px;
 }
-.firstDv, .secondDv{
+.first-dv, .second-dv{
     border-bottom: 1px solid rgba(0, 0, 0, 0.123);
     width: 46.5%;
 }
-.middleDv{
+.middle-dv{
     display: inline-flex;
     margin-bottom: -5px;
     padding-left: 2px;
     text-align: center;
     width: 6%;
 }
-.foorm{
+.adres-pas{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.foorm input{
+.adres-pas input{
     padding: 10px;
     margin: 5px;
     font-size: 18px;
@@ -164,11 +164,11 @@
     text-decoration: none;
     color: rgb(11, 116, 177);
 }
-.buttomDv{
+.buttom-dv{
     display: flex;
     flex-direction: column;
 }
-.buttomDv button{
+.buttom-dv button{
     width: 30%;
     padding: 10px;
     margin: 20px;
@@ -185,21 +185,21 @@
     border-radius: 10px;
 
 }
-.buttomDv button:hover{
+.buttom-dv button:hover{
     background-color: orange;
     color: white;
 }
-.buttomDv a{
+.buttom-dv a{
     text-decoration: none;
     cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-    .tabl{
+    .tabl-b{
         width: 50vw;
     }
 }
 @media screen and (min-width: 1024px) {
-    .tabl{
+    .tabl-b{
         width: 35vw;
     }
 }
