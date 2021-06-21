@@ -21,15 +21,25 @@
 }
 .heead{
     grid-area: hed;
-    display: block;
+    display: flex;
 }
 .tabl-inr{
     grid-area: tab;
     display: block;
     background-color: rgba(199, 196, 196, 0.055);
     padding: 25px;
-    border-top: 1px solid rgba(199, 196, 196, 0.295);
-    
+    border-top: 1px solid rgba(199, 196, 196, 0.295); 
+}
+.heead a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    color: brown;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
 }
 .tabl-b{
     display: grid;
@@ -75,7 +85,7 @@
     border: none;
     text-transform: uppercase;
 }
-.tab-main h1{
+.tab-main h1 a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 200;
 }
