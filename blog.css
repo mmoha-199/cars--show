@@ -10,10 +10,10 @@ body{
     display: grid;
     width: 100vw;
     grid-template-columns: 100vw;
-    grid-template-rows: 170px 900px 350px;
+    grid-template-rows: 170px 1080px 490px;
     margin-left: 0;
     margin-right: 0;
-    z-index: 0;
+    z-index: 1;
     grid-template-areas: 
     "hd"
     "main"
@@ -27,8 +27,6 @@ body{
 .author{
     display: flex;
     flex-direction: column;
-    
-
     grid-area: main;
     margin-left: 0;
     margin-right: 0;
@@ -38,6 +36,7 @@ body{
     grid-area: ft;
     align-self: end;
     bottom: 0;
+    width: 100vw;
 }
 /*NAV*/
 .navbar{
@@ -86,12 +85,13 @@ body{
     display: block;
     margin-left: 25%;
     width: 200px;
-    height: 500px;
+    height: 200px;
     border: 1px solid rgba(8, 8, 8, 0.096);
     box-shadow: 0px 8px 16px 0px rgba(139, 141, 140, 0.39);
     background-image: url("./img/avatar.jpg");
     background-size: cover;
     background-repeat: no-repeat;  
+    background-position-y: 15%;
 }
 .card{
     display: flex;
@@ -127,12 +127,18 @@ body{
 .general a{
     text-decoration: none;
 }
+.general p{
+    width: 80%;
+    line-height: 30px;
+}
 .contact{
     display: flex;
     flex-direction: column;
     justify-content: left;
+    line-height: 10px;
     background-color: #a39f9f;
     padding-left: 20px;
+    padding-bottom: 10px;
 }
 .sharing-s{
     display: flex;
@@ -153,9 +159,12 @@ body{
 }
 .refer-link{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     margin: 0px;
     padding: 0px;
+    padding-left: 20%;
 }
 .refer-link ul{
     list-style: none;
