@@ -9,7 +9,7 @@ body{
     display: grid;
     width: 100vw;
     grid-template-columns: 100vw;
-    grid-template-rows: 120px 2400px 170px;
+    grid-template-rows: 120px 2400px 480px;
     margin-left: 0;
     margin-right: 0;
     z-index: 0;
@@ -648,16 +648,16 @@ body{
         grid-template-rows: 100%;
         height: 300px;
     }
-    .aboutUs{
+    .about-us{
         height: 600px;
         background-color: #e4e1e1;
         margin-right: 0;
     }
-    .topAb{
+    .top-ab{
         margin-top: 20px;
         padding-top: 20px;
     }
-    .aboutUs p{
+    .about-us p{
         color: black;
         padding: 10px;
         line-height: 50px;
