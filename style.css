@@ -1,4 +1,4 @@
-*{
+body{
      
     font-size: 18px;
     box-sizing: border-box;
@@ -725,6 +725,23 @@
     }
     .about-us p{
         font-size: 20px;
+    }
+    .mmain-top button{
+        font-size: 1.2em;
+        width: 10%;
+    }
+    .reserve .circle, .click .circle{
+        align-self: center;
+    }
+    .pref-col{
+        font-size: 1.2em;
+        letter-spacing: 2px;
+    }
+    .cards-box h1{
+        font-size: 1.4em;
+    }
+    .cards-box p{
+        font-size: 1.1em;
     }
 }
 

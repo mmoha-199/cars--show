@@ -5,12 +5,11 @@ body{
     color: rgb(41, 38, 38);
     z-index: 0;
 }
-
 .container{
     display: grid;
     width: 100vw;
     grid-template-columns: 100vw;
-    grid-template-rows: 170px 1080px 490px;
+    grid-template-rows: 170px 1105px 490px;
     margin-left: 0;
     margin-right: 0;
     z-index: 1;
@@ -21,9 +20,7 @@ body{
 }
 .header{
     grid-area: hd;
-    z-index: 10;
 }
-
 .author{
     display: flex;
     flex-direction: column;
@@ -140,6 +137,16 @@ body{
     padding-left: 20px;
     padding-bottom: 10px;
 }
+.contact h1, .contact p{
+    text-transform: capitalize;
+}
+.contact p:last-of-type{
+    text-transform: uppercase;
+}
+.contact a{
+    text-decoration: none;
+    line-height: 30px;
+}
 .sharing-s{
     display: flex;
     flex-direction: column;
@@ -216,4 +223,21 @@ body{
 }
 .rights p::first-letter, .rights p a{
     text-transform: capitalize;
+}
+@media screen and (min-width: 768px) {
+    .container{
+        grid-template-rows: 170px 1105px 490px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .tabl-b{
+        width: 35vw;
+    }
+}
+@media screen and (min-width: 1200px){
+    .tabl-b{
+        width: 30vw;
+        margin: 0;
+        padding: 0;
+    }
 }
